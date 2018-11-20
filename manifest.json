@@ -1,0 +1,12 @@
+{
+  "name": "npm2yarn",
+  "description" : "It replaces npm i with yarn add",
+  "version": "0.1",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": ["http://www.npmjs.com/*", "https://www.npmjs.com/*"],
+      "js": ["npm2yarn.js"]
+    }
+  ]
+}
